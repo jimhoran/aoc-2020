@@ -1,6 +1,0 @@
-com/jimhoran/Utilities.java
- com.jimhoran.Utilities
-com/jimhoran/DayOne.java
- com.jimhoran.DayOne
-com/jimhoran/Main.java
- com.jimhoran.Main
