@@ -10,6 +10,11 @@ import java.util.logging.Logger;
 public class Utilities {
 
     Logger logger = Logger.getLogger(this.getClass().toString());
+    private String stringDelimiter;
+
+    public Utilities() {
+        stringDelimiter = "\n";
+    }
 
     File getFileName(String testMain, Integer day ){
         return new File("./src/" + testMain + "/resources/" + "input-" + day + ".txt");
@@ -47,7 +52,7 @@ public class Utilities {
         List<String> strings = new ArrayList<>();
 
         try (Scanner scanner = new Scanner(fqfn)) {
-            scanner.useDelimiter("\n");
+            scanner.useDelimiter(stringDelimiter);
             StringBuilder recordBuilder = new StringBuilder();
             while (scanner.hasNext()) {
                 String readString = scanner.next();
@@ -67,4 +72,11 @@ public class Utilities {
 
     }
 
+    public String getStringDelimiter() {
+        return stringDelimiter;
+    }
+
+    public void setStringDelimiter(String stringDelimiter) {
+        this.stringDelimiter = stringDelimiter;
+    }
 }
