@@ -26,8 +26,8 @@ public class UtilitiesTest {
         List<String> passportList = new ArrayList<>(8);
 
         List<String> input = utils.readFileOfStrings("test", 4);
-        input.stream().filter(x -> x.isEmpty()).filter(x -> x.isBlank()).forEach(System.out::println);
-        assertTrue(input.size() == 28);
+        input.stream().forEach(System.out::println);
+        assertTrue(input.size() == 13);
 
 
 

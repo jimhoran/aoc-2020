@@ -53,15 +53,8 @@ public class Utilities {
 
         try (Scanner scanner = new Scanner(fqfn)) {
             scanner.useDelimiter(stringDelimiter);
-            StringBuilder recordBuilder = new StringBuilder();
             while (scanner.hasNext()) {
-                String readString = scanner.next();
-                if (readString.isBlank() || readString.isEmpty()){
-                    recordBuilder.toString();
-                } else {
-                    recordBuilder.append(readString);
-                }
-
+                strings.add(scanner.next());
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
