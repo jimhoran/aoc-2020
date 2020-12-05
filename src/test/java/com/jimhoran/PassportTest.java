@@ -23,19 +23,27 @@ public class PassportTest {
     }
 
     @Test
-    public void testGetPassportsFromFile(){
-
+    public void testGetPassportsFromTestFile(){
         PassportReader pr = new PassportReader();
 
         List<Passport> testPassports = pr.getPassportsFromFile("test", 4);
         assertEquals(2, getValidPassports(testPassports));
+    }
+
+
+    @Test
+    public void testGetPassportsFromFile(){
+
+        PassportReader pr = new PassportReader();
 
         List<Passport> mainPassports = pr.getPassportsFromFile("main", 4);
         int validMainPassports = getValidPassports(mainPassports);
         System.out.println(validMainPassports);
-        assertEquals(195, validMainPassports);
+        assertEquals(114, validMainPassports);
 
     }
+
+
 
     private int getValidPassports(List<Passport> passports) {
         int validPassports = 0;
@@ -45,6 +53,5 @@ public class PassportTest {
         }
         return validPassports;
     }
-
 
 }
