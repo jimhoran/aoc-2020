@@ -12,13 +12,14 @@ public class BoardingPass {
     int getSeatId() {
 
         int row = getRow();
-        int seatId = 0;
+        int col = getColumn();
+
+        int seatId = 8*row + col;
 
         return seatId;
     }
 
     int getRow() {
-
         int row = 0;
         for (int i = 0; i < 7; i++) {
             char c = seatSpecification.charAt(i);
@@ -28,6 +29,14 @@ public class BoardingPass {
         }
         return row;
     }
-
-
+    int getColumn(){
+        int column = 0;
+        for (int i = 7; i < 10; i++) {
+            char c = seatSpecification.charAt(i);
+            if ( c == 'R'){
+                column = column + (1 << (9-i));
+            }
+        }
+        return column;
+    }
 }
