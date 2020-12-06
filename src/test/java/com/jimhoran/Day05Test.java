@@ -7,7 +7,7 @@ import java.util.Map;
 
 import static org.junit.Assert.assertEquals;
 
-public class BoardingPassTest {
+public class Day05Test {
 
     String seatId = "FBFBBFFRLR";
     BoardingPass pass = new BoardingPass(seatId);

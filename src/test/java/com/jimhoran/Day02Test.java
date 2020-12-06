@@ -13,7 +13,7 @@ public class Day02Test {
     @Test
     public void testFileInput(){
 
-        List<String> list =  util.readFileOfStrings(new File("./src/test/resources/test-input-2-actual.txt"));
+        List<String> list =  util.readFileOfStrings(new File("./src/test/resources/input-2.txt"));
         int validPasswords = 0;
         for (String line : list){
             String[] fields=line.split(" ");

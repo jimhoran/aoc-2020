@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        File file = new File("./src/main/resources/input.txt");
+        File file = new File("./src/main/resources/input-1.txt");
 
         Utilities utils = new Utilities();
         List<Integer> list = utils.readFileOfIntegers(file);

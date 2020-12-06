@@ -15,7 +15,7 @@ public class UtilitiesTest {
         Utilities utils = new Utilities();
 
         List<Integer> testInput =
-                utils.readFileOfIntegers(new File("./src/test/resources/test.txt"));
+                utils.readFileOfIntegers(new File("./src/test/resources/input-1.txt"));
 
         assertTrue(testInput.size() == 6);
     }

@@ -8,7 +8,7 @@ import static org.junit.Assert.assertTrue;
 
 public class Day03Test {
 
-    public static final File FQFN = new File("./src/test/resources/test-input-3.txt");
+    public static final File FQFN = new File("./src/test/resources/input-3.txt");
     Utilities utils = new Utilities();
 
     @Test

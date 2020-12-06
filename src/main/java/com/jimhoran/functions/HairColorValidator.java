@@ -11,7 +11,6 @@ public class HairColorValidator implements Predicate<String> {
             if (color.length() != 6) return false;
             for (char c : color.toCharArray()) {
                 int ascii = (int) c;
-//                System.out.println(c + " " + ascii );
                 if (( ascii < 48 || ascii > 57 ) && (ascii < 97 || ascii > 102)){
                     return false;
                 }

@@ -25,7 +25,6 @@ public class PassportReader {
             } else {
                 passportString = sb.toString();
                 passports.add(new Passport(passportString));
-//                System.out.println(passportString);
                 sb.setLength(0);
             }
         }
