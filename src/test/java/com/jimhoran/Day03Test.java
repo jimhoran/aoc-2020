@@ -32,11 +32,5 @@ public class Day03Test {
 
         long trees = hill.getTreesOnTrajectory(0,0, 3);
         assertTrue(trees == 7);
-
-
-
     }
-
-
-
 }

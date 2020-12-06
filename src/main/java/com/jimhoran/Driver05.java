@@ -41,8 +41,4 @@ public class Driver05 {
         System.out.println("vacantSeats=" + vacantSeats);
 
     }
-
-
-
-
 }

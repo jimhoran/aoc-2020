@@ -16,13 +16,14 @@ public class Utilities {
         stringDelimiter = "\n";
     }
 
-    File getFileName(String testMain, Integer day ){
+    File getFileName(String testMain, Integer day) {
         return new File("./src/" + testMain + "/resources/" + "input-" + day + ".txt");
     }
 
-    List<Integer> readFileOfIntegers(String testMain, Integer day){
+    List<Integer> readFileOfIntegers(String testMain, Integer day) {
         return readFileOfIntegers(getFileName(testMain, day));
     }
+
     List<Integer> readFileOfIntegers(File file) {
 
         List<Integer> integers = new ArrayList<>();
@@ -43,10 +44,11 @@ public class Utilities {
 
     }
 
-    // returns an ArrayList ordered
-    List<String> readFileOfStrings(String testMain, Integer day){
+
+    List<String> readFileOfStrings(String testMain, Integer day) {
         return readFileOfStrings(getFileName(testMain, day));
     }
+
     List<String> readFileOfStrings(File fqfn) {
 
         List<String> strings = new ArrayList<>();

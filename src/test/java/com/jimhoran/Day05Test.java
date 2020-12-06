@@ -14,9 +14,7 @@ public class Day05Test {
 
     @Test
     public void testGetSeatId() {
-
         assertEquals(357, pass.getSeatId());
-
     }
 
     @Test
@@ -39,7 +37,6 @@ public class Day05Test {
             BoardingPass p = new BoardingPass(s);
             assertEquals(testMap.get(s), Integer.valueOf(p.getSeatId()));
         }
-
     }
 
     @Test
@@ -47,8 +44,4 @@ public class Day05Test {
         BoardingPass p = new BoardingPass("BBBBBBBRRR");
         assertEquals(1023, p.getSeatId());
     }
-
-
-
-
 }
